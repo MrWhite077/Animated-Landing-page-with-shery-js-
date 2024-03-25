@@ -1,0 +1,155 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body
+{
+    width: 100%;
+    height: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#main
+{
+    width: 100%;
+    height: 100vh;
+}
+
+#back
+{
+    width: 100%;
+    height: 100vh;
+}
+#back img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#top
+{
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+#workingarea
+{
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    height: 100vh;
+}
+
+#nav
+{
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav img
+{
+    width: 80px;
+    
+}
+#navLeft,#navRight{
+    align-items: center;
+    display: flex;
+    gap: 40px;
+}
+
+
+#nav a{
+    pointer-events: all;
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+#hero{
+    position: absolute;
+    top: 15%;
+    left: 0;
+    transform: translate(0%,50%);
+    width: 100%;
+    height: 100px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+}
+#heroLeft{
+    min-width: 50%;
+    /* background: blue; */
+    height: 100px;
+
+}
+#heroLeft .elem{
+    height: 10vw;
+    position: relative;
+    /* background-color: red; */
+    overflow: hidden;
+}
+#heroLeft .elem h1{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    line-height: 0.9;
+    color: #fff;
+    font-weight: 100;
+    font-size: 11vw;
+    font-family: "kajiro";
+}
+#heroLeft .elem h1:nth-child(1){
+    top: 0;
+}
+#heroLeft button{
+    font-family: "kajiro";
+    padding: 1vw 7vw;
+    font-size: 3vw;
+    background: #fff;
+    pointer-events: all;
+}
+#heroRight{
+    width: 25%;
+    /* background: chartreuse; */
+    height: 100px;
+    color: #fff;
+}
+#heroRight p{
+    text-align: right;
+    /* margin-top: 50px; */
+    font-weight: 300;
+    font-size: 14px;
+
+}
+#imagediv {
+    height: 200px; /* Set the desired height */
+    width: 100%;   /* Ensure the image div spans the entire width */
+    margin-top: 20px;
+    margin-bottom: 40px;
+    position: relative;
+}
+#heroRight #imagediv img{
+    width: 100%;   /* Make the image width 100% of its container */
+    height: 100%;  /* Make the image height 100% of its container */
+    object-fit: cover; /* This property ensures the image covers the entire space without distortion */
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+#heroRight p:nth-child(3){
+    margin-bottom: 30px;
+}
